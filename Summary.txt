@@ -54,4 +54,4 @@
    char to int -'0'
    int to char +'0'
    
-4. Don't use itoa, it has been deprecated.
+4. Don't use itoa, it is non-standard C language function.
