@@ -24,8 +24,9 @@ But the following is not:
      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  };
 
-
-	 bool isSymmetric(TreeNode *root) {
+class Solution {
+public:
+    bool isSymmetric(TreeNode *root) {
 		 if (root == NULL)
 			 return true;
 
@@ -40,45 +41,46 @@ But the following is not:
 		 rightVec.push_back(to_string(p->val));
 		 p = root->left;
 		 TreeNode* q = root->right;
+		 int i=0;
+		 int j=0;
 
-		 while (p || leftStack.size()>1)
+		 while (p || leftStack.size()>1 || q || rightStack.size()>1)
 		 {
 			 if (p)
 			 {
 				 leftVec.push_back(to_string(p->val));
+				 i++;
 				 leftStack.push(p);
 				 p = p->left;
 			 }
-			 else
+			 else if (leftStack.size()>1)
 			 {
 				 leftVec.push_back("#");
+				 i++;
 				 p = leftStack.top();
 				 leftStack.pop();
 				 p = p->right;
-			 }
-		 }
-		 while (q || rightStack.size()>1)
-		 {
+			 };
 			 if (q)
 			 {
 				 rightVec.push_back(to_string(q->val));
+				 j++;
 				 rightStack.push(q);
 				 q = q->right;
 			 }
-			 else
+			 else if (rightStack.size()>1)
 			 {
 				 rightVec.push_back("#");
+				 j++;
 				 q = rightStack.top();
 				 rightStack.pop();
 				 q = q->left;
 			 }
-		 }
-		 if (leftVec.size() != rightVec.size())
-			 return false;
-		 for (int i = 0, j = 0; i<leftVec.size(), j<leftVec.size(); i++, j++)
-		 {
-			 if (leftVec[i]!=rightVec[j])
+
+			 if (leftVec.size() != rightVec.size() || leftVec[i] != rightVec[j])
 				 return false;
 		 }
+
 		 return true;
-	 };
+	 }
+};
