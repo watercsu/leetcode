@@ -57,6 +57,6 @@
 4. Don't use itoa, it is non-standard C language function.
 
 5. When it comes to string, note
-   1. there is char cannot be coveret to int
+   1. there is char cannot be coveret to int, there is a function isdigit(char c) used to check it
    2. need skip blank, need take care if the first letter is '+' or '-'
    3. need think about int overflow
