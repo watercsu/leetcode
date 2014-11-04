@@ -59,4 +59,4 @@
 5. When it comes to string, note
    1. there is char cannot be coveret to int, there is a function isdigit(char c) used to check it
    2. need skip blank, need take care if the first letter is '+' or '-'
-   3. need think about int overflow
+   3. need think about int overflow. INT_MAX=2147483647 INT_MIN=-2147483648
