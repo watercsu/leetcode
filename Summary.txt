@@ -49,10 +49,12 @@
       TreeNode(int x) : val(x), left(NULL), right(NULL) {}
   };
   
-3. int to string
-   to_string(42) /*Don't forget include string in the head file*/
-   char to int -'0'
-   int to char +'0'
+3. string tip
+   * to_string(42) /*Don't forget include string in the head file*/
+   * char to int -'0'
+   * int to char +'0'
+   * isdigit(char c) can be used to check if c can be converted to digit
+   * isalnum(char c) can be used to check if c can be converted to digit or letter
    
 4. Don't use itoa, it is non-standard C language function.
 
