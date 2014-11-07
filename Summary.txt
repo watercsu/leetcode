@@ -55,6 +55,7 @@
    * int to char +'0'
    * isdigit(char c) can be used to check if c can be converted to digit
    * isalnum(char c) can be used to check if c can be converted to digit or letter
+   * cannot assign a NULL value to string. It will throw run time error.
    
 4. Don't use itoa, it is non-standard C language function.
 
@@ -62,3 +63,6 @@
    1. there is char cannot be coveret to int, there is a function isdigit(char c) used to check it
    2. need skip blank, need take care if the first letter is '+' or '-'
    3. need think about int overflow. INT_MAX=2147483647 INT_MIN=-2147483648
+   
+6. Point && Reference
+   * Don't need check if reference is NULL as reference cannot be NULL
