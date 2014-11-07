@@ -55,7 +55,8 @@
    * int to char +'0'
    * isdigit(char c) can be used to check if c can be converted to digit
    * isalnum(char c) can be used to check if c can be converted to digit or letter
-   * cannot assign a NULL value to string. It will throw run time error.
+   * cannot assign a NULL value to string in C++ as std::string is not a point type. Use s="" or s.empty() or s=std::string()
+     to clear string in C++. But in C# we can assign a null to string
    
 4. Don't use itoa, it is non-standard C language function.
 
