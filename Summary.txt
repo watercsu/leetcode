@@ -48,10 +48,7 @@
       at least operator== and you need a hash function.
             
    * Difference between HashTable and Hashmap
-   1.HashTable的方法是同步的，HashMap未经同步，所以在多线程场合要手动同步HashMap这个区别就像Vector和ArrayList一样。
-   2.HashTable不允许null值(key和value都不可以),HashMap允许null值(key和value都可以)。
-   3.HashTable有一个contains(Object value)，功能和containsValue(Object value)功能一样。
-   4.HashTable使用Enumeration，HashMap使用Iterator。
+   1.No hashTable in C++. HashMap使用Iterator。
 
 2. Constructor 
    struct TreeNode {
