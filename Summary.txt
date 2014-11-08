@@ -1,6 +1,7 @@
 1. STL
    stack: push, pop, top
-   vector: 
+   map: map<int,int> hashmap; hashmap[key]=value.
+   vector: push_back,insert
           * We can use vector[i] to view elements but we cannot use vector[i] to set elements.
           * Use vector instead of array if you are not sure about size.
           * push_back: add element at the last position. 
