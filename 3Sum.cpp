@@ -30,7 +30,7 @@ public:
 				}
 			}			
 			i++;
-			while (i<num.size() - 2 && num[i] == num[i-1]) i++;
+			while (i<num.size()&& num[i] == num[i-1]) i++;
 		}
     	return ret;
     }
