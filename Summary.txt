@@ -7,6 +7,7 @@
           * We can use vector[i] to view elements but we cannot use vector[i] to set elements.
           * Use vector instead of array if you are not sure about size.
           * push_back: add element at the last position. 
+          * if you want to use ret[i].push_back before ret has value. Please initalize it as vector<vercotr<int>> ret(numRows,vector<int>());
           * insert
             single element (1): iterator insert (iterator position, const value_type& val);
             fill (2): void insert (iterator position, size_type n, const value_type& val);
