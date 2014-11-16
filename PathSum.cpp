@@ -36,7 +36,8 @@ public:
                 return true;
         }
         if(root->right) {
-            return hasPathSum(root->right, sum-root->val);
+            if( hasPathSum(root->right, sum-root->val))
+                return true;
         }
     }
 };
