@@ -89,3 +89,6 @@
    * Don't need check if reference is NULL as reference cannot be NULL
 
 7. When condition comes to i<num.size()-2 && num[i]==num[i-1], put compare at the front
+
+8. LinkedList
+   * DummyNode  
