@@ -55,6 +55,8 @@
             
    * Difference between HashTable and Hashmap
    1.No hashTable in C++. HashMap使用Iterator。
+   
+   * When there is a pop operation for stack/vector etc. THERE MUST BE A CHECK IF STACK/VECTOR IS EMPTY.
 
 2. Constructor 
    struct TreeNode {
