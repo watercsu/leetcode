@@ -11,6 +11,7 @@
           * vector<int> ret(rowIndex+1,1) initalize vector with value 1
           * Similar to string, you cannot use ret=NULL in C++.
           * sort usage: sort(ret.begin(),ret.end())
+            Note: if ret is empty, sort(ret.begin(),ret.end()) will throw exception
           * insert
             single element (1): iterator insert (iterator position, const value_type& val);
             fill (2): void insert (iterator position, size_type n, const value_type& val);
