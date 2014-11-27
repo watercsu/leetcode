@@ -96,6 +96,10 @@
 
 8. LinkedList
    * DummyNode 
+   * TestCase:
+     a. List is empty
+     b. List has one node
+     c. List has lots of nodes
 
 9. Utilities
    abs usage: abs(a-b)
