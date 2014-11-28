@@ -103,3 +103,6 @@
 
 9. Utilities
    abs usage: abs(a-b)
+
+10. Recurise
+    One way to reduce time cost in recurise is using cache. Reference ClimbingStairs for detail
