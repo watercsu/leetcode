@@ -110,3 +110,10 @@
 
 11. 涉及到求最长连续子串（最大和或者最大乘积）时，要keep当前结点的信息.
     eg. Maximum Product Subarray
+    
+12. Find an item in Array, below case need care:
+    * One item(the only satisfied/Disatified)
+    * Two item
+    * The first item statified
+    * The last item statified
+    eg. Find Peak Element
