@@ -107,3 +107,6 @@
 
 10. Recurise
     One way to reduce time cost in recurise is using cache. Reference ClimbingStairs for detail
+
+11. 涉及到求最长连续子串（最大和或者最大乘积）时，要keep当前结点的信息.
+    eg. Maximum Product Subarray
