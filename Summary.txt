@@ -117,3 +117,7 @@
     * The first item statified
     * The last item statified
     eg. Find Peak Element
+    
+13. Tree
+    * When use p->left or p->right, CHECK IF P IS NULL
+    * Case for tree should consider root is NULL, root doesn't have any child
